@@ -20,8 +20,8 @@ class Pokemon
     Pokemon.new(id: found_poke[0][0], name: found_poke[0][1], type: found_poke[0][2], hp: found_poke[0][3], db: db)
   end
 
-  def alter_hp(id, hp)
-    
+  def alter_hp(id, db)
+    Pokemon.find(id, db)
   end
 
 end
